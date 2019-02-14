@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#wapper {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 80%;
+	margin: auto;
+	height: 200px;
+	background-color: #bbffff;
+	clear: both;
+}
+
+aside {
+	width: 10%;
+	margin-left:190px;
+	background-color: #fccbea;
+	float: left;
+}
+aside ul li{
+	text-decoration: none;
+	list-style: none;
+}
+
+#content {
+	width: 60%;
+	margin: auto;
+	background-color: #fccbea;
+}
+
+footer {
+	width: 80%;
+	margin: auto;
+	clear: both;
+}

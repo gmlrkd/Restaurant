@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#wapper {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	width: 50%;
+	margin: auto;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hee.restaurant.dao.RestaurantDAO">
+	<select id="getAllList" resultType="rvo">
+		select * from( select rownum
+		, list.* from (select * from restaurant
+		order by rownum desc ) list ) where rownum between 1 and 10
+	</select>
+	<select id="pageCount" resultType="integer">
+		select count(*) from restaurant
+	</select>
+	<select id="getRVO" resultType="rvo" parameterType="String">
+		select * from
+		restaurant where no = #{value}
+	</select>
+</mapper>
